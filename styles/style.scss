@@ -1,0 +1,352 @@
+$lime-green: hsl(163, 72%, 41%);
+$bright-red: hsl(356, 69%, 56%);
+$facebook: hsl(208, 92%, 53%);
+$twitter: hsl(203, 89%, 53%);
+$youtube: hsl(348, 97%, 39%);
+$very-dark-blue: hsl(230, 17%, 14%);
+$very-grayish-blue: hsl(228, 12%, 44%);
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  width: 100%;
+  height: 100vh;
+  background-color: hsl(0, 0%, 100%);
+}
+.first-section {
+  background-color: hsl(225, 100%, 98%);
+  height: 250px;
+  header {
+    width: 80%;
+    margin: auto;
+    position: relative;
+    h1 {
+      margin: 0;
+      padding-top: 30px;
+      color: $very-dark-blue;
+      font-size: 20px;
+    }
+    p {
+      color: $very-grayish-blue;
+      margin-top: 10px;
+      font-size: 13px;
+      border-bottom: 1px solid $very-grayish-blue;
+      padding-bottom: 20px;
+      font-weight: 700;
+    }
+    .switch {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      p {
+        display: inline-block;
+        color: $very-grayish-blue;
+        margin: 0;
+        margin-top: 7px;
+        border-bottom: none;
+      }
+      button {
+        width: 40px;
+        height: 19px;
+        border: none;
+        margin-top: -10px;
+        border-radius: 100px;
+        background-image: linear-gradient(
+          to right,
+          hsl(210, 78%, 56%),
+          hsl(146, 68%, 55%)
+        );
+        .circle {
+          width: 15px;
+          height: 15px;
+          background-color: white;
+          border-radius: 100%;
+          margin-left: -4px;
+          transition: all 0.5s ease;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .social-media-followers {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    position: relative;
+    z-index: 2;
+    top: 15px;
+    .box {
+      width: 100%;
+      min-width: 250px;
+      //max-width: 300px;
+      height: clac(20%/2);
+      border-radius: 5px;
+      background-color: hsl(227, 47%, 96%);
+      transition: all 0.3s ease;
+      cursor: pointer;
+      &:hover {
+        background-color: hsl(230, 22%, 74%);
+        transform: translateY(-20px);
+      }
+      .account {
+        width: fit-content;
+        margin: auto;
+        margin-top: 35px;
+        a {
+          position: relative;
+          top: -5px;
+          text-decoration: none;
+          color: $very-grayish-blue;
+        }
+      }
+      .number {
+        font-size: 65px;
+        font-weight: 700;
+        margin: 15px 0 0px 0;
+        text-align: center;
+      }
+      .followers-text {
+        text-align: center;
+        font-size: 15px;
+        margin: 0;
+        text-transform: uppercase;
+        color: $very-grayish-blue;
+        letter-spacing: 5px;
+      }
+      .today-followers {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        color: $lime-green;
+        img {
+          position: relative;
+          top: -5px;
+        }
+      }
+    }
+    .facebook-followers {
+      border-top: 5px solid $facebook;
+    }
+    .twitter-followers {
+      border-top: 5px solid $twitter;
+    }
+    .instagram-followers {
+      position: relative;
+      overflow: hidden;
+      &::before {
+        content: "";
+        width: 100%;
+        height: 5px;
+        background-image: linear-gradient(
+          to right,
+          hsl(37, 97%, 70%),
+          hsl(329, 70%, 58%)
+        );
+        position: absolute;
+      }
+    }
+    .youtube-followers {
+      border-top: 5px solid $youtube;
+      .today-followers {
+        color: $bright-red;
+      }
+    }
+  }
+}
+.second-section {
+  width: 80%;
+  margin: 1130px auto 20px auto;
+  h2 {
+    color: $very-grayish-blue;
+  }
+  .boxes {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    .box {
+      width: 100%;
+      height: 100%;
+      min-width: 250px;
+      //max-width: 300px;
+      border-radius: 5px;
+      background-color: hsl(227, 47%, 96%);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      cursor: pointer;
+      &:hover {
+        background-color: hsl(230, 22%, 74%);
+      }
+      p {
+        color: $very-grayish-blue;
+        margin-left: 20px;
+        margin-top: 30px;
+        margin-bottom: 0;
+        font-weight: 700;
+      }
+      .number {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-size: 30px;
+        color: $very-dark-blue;
+      }
+      .icon {
+        img {
+          float: right;
+          margin-top: 30px;
+          margin-right: 20px;
+        }
+      }
+      .percentage-container {
+        .percentage {
+          color: $lime-green;
+          float: right;
+          margin-right: 20px;
+          img {
+            margin: 0;
+          }
+        }
+        .down {
+          color: $bright-red;
+        }
+      }
+    }
+  }
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
+.darkTheme {
+  background-color: hsl(230, 17%, 14%);
+  .first-section {
+    background-color: hsl(232, 19%, 15%);
+    header {
+      h1 {
+        color: hsl(0, 0%, 100%);
+      }
+      p {
+        color: hsl(228, 34%, 66%);
+      }
+      .followers-text {
+        color: hsl(228, 34%, 66%);
+      }
+      .switch {
+        p {
+          color: hsl(0, 0%, 100%);
+        }
+      }
+    }
+    .social-media-followers {
+      .box {
+        background-color: hsl(228, 28%, 20%);
+        &:hover {
+          background-color: hsl(223, 15%, 38%);
+        }
+        .account a {
+          color: hsl(228, 34%, 66%);
+        }
+        .number {
+          color: hsl(0, 0%, 100%);
+        }
+        .followers-text {
+          color: hsl(228, 34%, 66%);
+        }
+      }
+    }
+  }
+  .second-section {
+    h2 {
+      color: hsl(0, 0%, 100%);
+    }
+    .boxes .box {
+      background-color: hsl(228, 28%, 20%);
+      &:hover {
+        background-color: hsl(223, 15%, 38%);
+      }
+      p {
+        color: hsl(228, 34%, 66%);
+      }
+      .number {
+        color: hsl(0, 0%, 100%);
+      }
+    }
+  }
+}
+@media screen and(min-width: 700px) {
+  .first-section {
+    height: 300px;
+    header {
+      h1 {
+        font-size: 30px;
+      }
+      p {
+        margin-top: 10px;
+        font-size: unset;
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+      .switch {
+        position: absolute;
+        right: 0;
+        top: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 150px;
+        button {
+          width: 50px;
+          height: 30px;
+          margin-top: 0;
+          .circle {
+            width: 25px;
+            height: 25px;
+          }
+        }
+      }
+    }
+    .social-media-followers {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      top: 40px;
+    }
+  }
+  .second-section {
+    margin: 420px auto 20px auto;
+    .boxes {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      gap: 30px;
+    }
+  }
+}
+@media screen and(min-width: 1130px) {
+  .first-section {
+    .social-media-followers {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+    }
+  }
+  .second-section {
+    margin: 140px auto 20px auto;
+    .boxes {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+  }
+}
