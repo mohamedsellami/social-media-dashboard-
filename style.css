@@ -1,0 +1,411 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+}
+
+.first-section {
+  background-color: #f5f7ff;
+  height: 250px;
+}
+
+.first-section header {
+  width: 80%;
+  margin: auto;
+  position: relative;
+}
+
+.first-section header h1 {
+  margin: 0;
+  padding-top: 30px;
+  color: #1e202a;
+  font-size: 20px;
+}
+
+.first-section header p {
+  color: #63687e;
+  margin-top: 10px;
+  font-size: 13px;
+  border-bottom: 1px solid #63687e;
+  padding-bottom: 20px;
+  font-weight: 700;
+}
+
+.first-section header .switch {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.first-section header .switch p {
+  display: inline-block;
+  color: #63687e;
+  margin: 0;
+  margin-top: 7px;
+  border-bottom: none;
+}
+
+.first-section header .switch button {
+  width: 40px;
+  height: 19px;
+  border: none;
+  margin-top: -10px;
+  border-radius: 100px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#378fe6), to(#3eda82));
+  background-image: linear-gradient(to right, #378fe6, #3eda82);
+}
+
+.first-section header .switch button .circle {
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  border-radius: 100%;
+  margin-left: -4px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.first-section .social-media-followers {
+  width: 80%;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 30px;
+  position: relative;
+  z-index: 2;
+  top: 15px;
+}
+
+.first-section .social-media-followers .box {
+  width: 100%;
+  min-width: 250px;
+  height: clac(20%/2);
+  border-radius: 5px;
+  background-color: #f0f2fa;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.first-section .social-media-followers .box:hover {
+  background-color: #aeb3cb;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+}
+
+.first-section .social-media-followers .box .account {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  margin-top: 35px;
+}
+
+.first-section .social-media-followers .box .account a {
+  position: relative;
+  top: -5px;
+  text-decoration: none;
+  color: #63687e;
+}
+
+.first-section .social-media-followers .box .number {
+  font-size: 65px;
+  font-weight: 700;
+  margin: 15px 0 0px 0;
+  text-align: center;
+}
+
+.first-section .social-media-followers .box .followers-text {
+  text-align: center;
+  font-size: 15px;
+  margin: 0;
+  text-transform: uppercase;
+  color: #63687e;
+  letter-spacing: 5px;
+}
+
+.first-section .social-media-followers .box .today-followers {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #1db489;
+}
+
+.first-section .social-media-followers .box .today-followers img {
+  position: relative;
+  top: -5px;
+}
+
+.first-section .social-media-followers .facebook-followers {
+  border-top: 5px solid #198ff5;
+}
+
+.first-section .social-media-followers .twitter-followers {
+  border-top: 5px solid #1ca0f2;
+}
+
+.first-section .social-media-followers .instagram-followers {
+  position: relative;
+  overflow: hidden;
+}
+
+.first-section .social-media-followers .instagram-followers::before {
+  content: "";
+  width: 100%;
+  height: 5px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#fdc468), to(#df4996));
+  background-image: linear-gradient(to right, #fdc468, #df4996);
+  position: absolute;
+}
+
+.first-section .social-media-followers .youtube-followers {
+  border-top: 5px solid #c4032a;
+}
+
+.first-section .social-media-followers .youtube-followers .today-followers {
+  color: #dc414c;
+}
+
+.second-section {
+  width: 80%;
+  margin: 1130px auto 20px auto;
+}
+
+.second-section h2 {
+  color: #63687e;
+}
+
+.second-section .boxes {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.second-section .boxes .box {
+  width: 100%;
+  height: 100%;
+  min-width: 250px;
+  border-radius: 5px;
+  background-color: #f0f2fa;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  cursor: pointer;
+}
+
+.second-section .boxes .box:hover {
+  background-color: #aeb3cb;
+}
+
+.second-section .boxes .box p {
+  color: #63687e;
+  margin-left: 20px;
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-weight: 700;
+}
+
+.second-section .boxes .box .number {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: #1e202a;
+}
+
+.second-section .boxes .box .icon img {
+  float: right;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+
+.second-section .boxes .box .percentage-container .percentage {
+  color: #1db489;
+  float: right;
+  margin-right: 20px;
+}
+
+.second-section .boxes .box .percentage-container .percentage img {
+  margin: 0;
+}
+
+.second-section .boxes .box .percentage-container .down {
+  color: #dc414c;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+.darkTheme {
+  background-color: #1e202a;
+}
+
+.darkTheme .first-section {
+  background-color: #1f212e;
+}
+
+.darkTheme .first-section header h1 {
+  color: white;
+}
+
+.darkTheme .first-section header p {
+  color: #8b97c6;
+}
+
+.darkTheme .first-section header .followers-text {
+  color: #8b97c6;
+}
+
+.darkTheme .first-section header .switch p {
+  color: white;
+}
+
+.darkTheme .first-section .social-media-followers .box {
+  background-color: #252a41;
+}
+
+.darkTheme .first-section .social-media-followers .box:hover {
+  background-color: #525b6f;
+}
+
+.darkTheme .first-section .social-media-followers .box .account a {
+  color: #8b97c6;
+}
+
+.darkTheme .first-section .social-media-followers .box .number {
+  color: white;
+}
+
+.darkTheme .first-section .social-media-followers .box .followers-text {
+  color: #8b97c6;
+}
+
+.darkTheme .second-section h2 {
+  color: white;
+}
+
+.darkTheme .second-section .boxes .box {
+  background-color: #252a41;
+}
+
+.darkTheme .second-section .boxes .box:hover {
+  background-color: #525b6f;
+}
+
+.darkTheme .second-section .boxes .box p {
+  color: #8b97c6;
+}
+
+.darkTheme .second-section .boxes .box .number {
+  color: white;
+}
+
+@media screen and (min-width: 700px) {
+  .first-section {
+    height: 300px;
+  }
+  .first-section header h1 {
+    font-size: 30px;
+  }
+  .first-section header p {
+    margin-top: 10px;
+    font-size: unset;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  .first-section header .switch {
+    position: absolute;
+    right: 0;
+    top: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 150px;
+  }
+  .first-section header .switch button {
+    width: 50px;
+    height: 30px;
+    margin-top: 0;
+  }
+  .first-section header .switch button .circle {
+    width: 25px;
+    height: 25px;
+  }
+  .first-section .social-media-followers {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    top: 40px;
+  }
+  .second-section {
+    margin: 420px auto 20px auto;
+  }
+  .second-section .boxes {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+  }
+}
+
+@media screen and (min-width: 1130px) {
+  .first-section .social-media-followers {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+  }
+  .second-section {
+    margin: 140px auto 20px auto;
+  }
+  .second-section .boxes {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
+}
+/*# sourceMappingURL=style.css.map */
