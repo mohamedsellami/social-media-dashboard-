@@ -1,5 +1,5 @@
 const circle = document.querySelector(".switch button .circle");
-const switcher = document.querySelector(".switch");
+const switcher = document.querySelector(".switch button");
 const body = document.querySelector("body");
 switcher.addEventListener("click", switchBetweenDarkAndLightTheme);
 function switchBetweenDarkAndLightTheme() {
