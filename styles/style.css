@@ -95,7 +95,6 @@ body {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  margin-bottom: 30px;
   position: relative;
   z-index: 2;
   top: 15px;
@@ -109,6 +108,7 @@ body {
   background-color: #f0f2fa;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  margin-bottom: 30px;
   cursor: pointer;
 }
 
@@ -377,6 +377,7 @@ body {
         grid-template-columns: 1fr 1fr;
     -ms-grid-rows: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
+    gap: 30px;
     top: 40px;
   }
   .second-section {
