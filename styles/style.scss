@@ -83,18 +83,17 @@ body {
     margin: auto;
     display: grid;
     grid-template-columns: 1fr;
-    gap: 30px;
     position: relative;
     z-index: 2;
     top: 15px;
     .box {
       width: 100%;
       min-width: 250px;
-      //max-width: 300px;
       height: clac(20%/2);
       border-radius: 5px;
       background-color: hsl(227, 47%, 96%);
       transition: all 0.3s ease;
+      margin-bottom: 30px;
       cursor: pointer;
       &:hover {
         background-color: hsl(230, 22%, 74%);
@@ -174,17 +173,15 @@ body {
   .boxes {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 30px;
     .box {
       width: 100%;
-      height: 100%;
       min-width: 250px;
-      //max-width: 300px;
       border-radius: 5px;
       background-color: hsl(227, 47%, 96%);
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
+      margin-bottom: 30px;
       cursor: pointer;
       &:hover {
         background-color: hsl(230, 22%, 74%);
@@ -195,6 +192,7 @@ body {
         margin-top: 30px;
         margin-bottom: 0;
         font-weight: 700;
+        font-size: 13px;
       }
       .number {
         margin-top: 10px;
@@ -324,10 +322,12 @@ body {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
       top: 40px;
+      gap: 30px;
     }
   }
   .second-section {
     margin: 420px auto 20px auto;
+    gap: 30px;
     .boxes {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr;
