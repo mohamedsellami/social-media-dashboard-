@@ -205,6 +205,7 @@ body {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
+  gap: 30px;
 }
 
 .second-section .boxes .box {
@@ -219,7 +220,6 @@ body {
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
-  margin-bottom: 30px;
   cursor: pointer;
 }
 
